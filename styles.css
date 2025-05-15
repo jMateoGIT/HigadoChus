@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fdf4e3;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  background-image: url("A_seamless_digital_illustration_pattern_on_a_light.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  opacity: 0.3; /* 50% de transparencia */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.higado {
+  width: 400px;
+  animation: bounce 2s infinite;
+}
+
+.mensaje {
+  margin-top: 10px;
+  font-size: 2.5rem;
+  color: #5f2167;
+  line-height: 1.4;
+}
+
+.socrro {
+  margin-top: 20px;
+  font-size: 4rem;
+  color: #b70f36;
+  line-height: 1.4;
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
